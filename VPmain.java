@@ -4,14 +4,29 @@ public class VPMain {
     VirtualPet vp = new VirtualPet();
     
     public VPMain(){
-        vp.feed();
-        vp.exercise();
+        vp.sleeping();
         this.waitABeat(1000);
-        String ans = this.askForInput("Are you ready to sleep?");
-        if(ans.equals("yes"))
-            vp.sleep();
-        else
-            vp.exercise();
+        String ans = this.askForInput("Do you want to wear your hat today?");
+        if(ans.equals("yes")) {
+            vp.Hat();
+            vp.transportation(); 
+            this.waitABeat(5000);
+            String entrance = this.askForInput("do you want to enter from the front or back?"); 
+            if(entrance.equals("front")) {
+                vp.opening();
+            }
+            else    
+                vp.closed(); 
+                this.waitABeat(2000);
+                String question = this.askForInput("Mr Morris asks you what you are doing here. What do you say? (say: forgot phone or math hour"); 
+                if(question.equals("forgot phone")) {
+                    vp.youAreOk();
+                }
+                else 
+                    vp.notOk(); 
+        }
+        else 
+            vp.noHat();
     }
 
     public void waitABeat(int ms){
