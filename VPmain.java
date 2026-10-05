@@ -22,7 +22,7 @@ public class VPMain {
                 if(question.equals("forgot phone")) {
                     vp.youAreOk();
                     String choice = this.askForInput("Theres a 10 numbered folders in here. Which number folder do you take?");
-                    if (choice.equals("1")) {
+                    if (choice <= 0 && choice >=3)
 
                     }
                 }
