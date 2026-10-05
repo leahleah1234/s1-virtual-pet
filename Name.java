@@ -20,4 +20,9 @@ public class Name {
         }
         return part; 
     }
+
+    //compare the first and last to see if the same 
+    public boolean isSame(Name other) {
+        return this.myFirst == other.myFirst;
+    }
 }

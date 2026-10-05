@@ -69,4 +69,13 @@ public class VirtualPet {
         face.setMessage("Mr Morris: Yeah right, why would you be going to math hour? Go home!"); 
     }
 
+    public void sadEnding() {
+        face.setImage("sadperry");
+        face.setMessage("You failed your cs class!"); 
+    }
+
+    public void multipleEnding() {
+        
+    }
+
 } // end Virtual Pet
