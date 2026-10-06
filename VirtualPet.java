@@ -74,8 +74,24 @@ public class VirtualPet {
         face.setMessage("You failed your cs class!"); 
     }
 
-    public void multipleEnding() {
-        
+    public void normalEnding() {
+        face.setImage("bored");
+        face.setMessage("You got some answers but it wasn't for the test version you had")
+    }
+
+    public void badEnding() {
+        face.setImage("soscared");
+        face.setMessage("Right when you find the answer key Mr. Morris walks in and gives you a referral!")
+    }
+
+    public void whateverEnding() {
+        face.setImage("reallyannoyed");
+        face.setMessage("You got all the test answers but nobody in your class thanked you!")
+    }
+
+    public void amazingEnding() {
+        face.setImage("rich");
+        face.setMessage("WOW! You found all the answers and your class payed you $1000!!!!")
     }
 
 } // end Virtual Pet
