@@ -23,7 +23,7 @@ public class VPmain {
                 if(question.equals("forgot phone")) {
                     vp.youAreOk();
                     this.waitABeat(2000);
-                    int choice = Integer.parseInt(this.askForInput("Theres a 10 numbered folders in here. Which number folder do you take?"));
+                    int choice = Integer.parseInt(this.askForInput("There a 10 numbered folders in here. Which number folder do you take?"));
                     if (choice >= 0 && choice <=3) {
                         vp.normalEnding();
                     }
