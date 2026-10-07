@@ -1,9 +1,9 @@
 import javax.swing.*;
 
-public class VPMain {
+public class VPmain {
     VirtualPet vp = new VirtualPet();
     
-    public VPMain(){
+    public VPmain(){
         vp.sleeping();
         this.waitABeat(1000);
         String ans = this.askForInput("Do you want to wear your hat today?");
@@ -15,14 +15,14 @@ public class VPMain {
             if(entrance.equals("front")) {
                 vp.opening();
             }
-            else    
+            else  {  
                 vp.closed(); 
                 this.waitABeat(2000);
                 String question = this.askForInput("Mr Morris asks you what you are doing here. What do you say? (say: forgot phone or math hour"); 
                 if(question.equals("forgot phone")) {
                     vp.youAreOk();
                     this.waitABeat(2000);
-                    int choice = this.askForInput("Theres a 10 numbered folders in here. Which number folder do you take?");
+                    int choice = Integer.parseInt(this.askForInput("Theres a 10 numbered folders in here. Which number folder do you take?"));
                     if (choice >= 0 && choice <=3) {
                         vp.normalEnding();
                     }
@@ -35,15 +35,15 @@ public class VPMain {
                     else if (choice == 10) {
                         vp.amazingEnding();
                     }
-                    }
                 }
-                else 
+                else {
                     vp.notOk(); 
                     vp.sadEnding();
-        }
-        else 
+                }
+            }
+        } else 
             vp.noHat();
-
+    }
 
     public void waitABeat(int ms){
         try {
@@ -66,7 +66,7 @@ public class VPMain {
 
 
     public static void main(String[] args) {
-        new VPMain();    
+        new VPmain();    
     }
 }
 
