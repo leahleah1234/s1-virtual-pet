@@ -9,14 +9,15 @@ public class VPmain {
         String ans = this.askForInput("Do you want to wear your hat today?");
         if(ans.equals("yes")) {
             vp.Hat();
+            this.waitABeat(2000); 
             vp.transportation(); 
-            this.waitABeat(5000);
-            String entrance = this.askForInput("do you want to enter from the front or back?"); 
+            this.waitABeat(2000);
+            String entrance = this.askForInput("do you want to enter from the front or back of the school?"); 
             if(entrance.equals("front")) {
-                vp.opening();
+                vp.closed();
             }
             else  {  
-                vp.closed(); 
+                vp.opening(); 
                 this.waitABeat(2000);
                 String question = this.askForInput("Mr Morris asks you what you are doing here. What do you say? (say: forgot phone or math hour"); 
                 if(question.equals("forgot phone")) {
@@ -38,6 +39,7 @@ public class VPmain {
                 }
                 else {
                     vp.notOk(); 
+                    this.waitABeat(2000); 
                     vp.sadEnding();
                 }
             }
@@ -69,4 +71,3 @@ public class VPmain {
         new VPmain();    
     }
 }
-

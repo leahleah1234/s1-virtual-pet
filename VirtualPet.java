@@ -12,7 +12,7 @@ public class VirtualPet {
     public VirtualPet() {
         face = new VirtualPetFace();
         face.setImage("sleeping");
-        face.setMessage("Hello.");
+        face.setMessage("Hi");
     }
 
     public void feed() {
@@ -56,7 +56,7 @@ public class VirtualPet {
 
     public void closed() {
         face.setImage("scared");
-        face.setMessage("OH NO ITS MR MORRIS..."); 
+        face.setMessage("OH NO ITS MR MORRIS... (You go home"); 
     }
 
     public void youAreOk() {
@@ -76,22 +76,22 @@ public class VirtualPet {
 
     public void normalEnding() {
         face.setImage("bored");
-        face.setMessage("You got some answers but it wasn't for the test version you had")
+        face.setMessage("You got some answers but it wasn't for the test version you had");
     }
 
     public void badEnding() {
         face.setImage("soscared");
-        face.setMessage("Right when you find the answer key Mr. Morris walks in and gives you a referral!")
+        face.setMessage("Right when you find the answer key Mr. Morris walks in and gives you a referral!");
     }
 
     public void whateverEnding() {
         face.setImage("reallyannoyed");
-        face.setMessage("You got all the test answers but nobody in your class thanked you!")
+        face.setMessage("You got all the test answers but nobody in your class thanked you!");
     }
 
     public void amazingEnding() {
         face.setImage("rich");
-        face.setMessage("WOW! You found all the answers and your class payed you $1000!!!!")
+        face.setMessage("WOW! You found all the answers and your class payed you $1000!!!!");
     }
 
 } // end Virtual Pet
