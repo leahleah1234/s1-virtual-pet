@@ -43,7 +43,7 @@ public class VPMain {
         }
         else 
             vp.noHat();
-    }
+
 
     public void waitABeat(int ms){
         try {
